@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typingsprint Pro - Predefined Lessons</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Basic Theme Colors */
+    body.dark {
+      background: linear-gradient(120deg, #181818, #202020);
+      color: #f3f3f3;
+    }
+    body.light {
+      background: #f4f4f4;
+      color: #222;
+    }
+    header h1 { color: #00c8ff; }
+    body.light header h1 { color: #0077aa; }
+
+    /* Buttons */
+    .theme-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      background: #00c8ff;
+      color: #121212;
+      font-weight: bold;
+    }
+    body.light .theme-toggle {
+      background: #0077aa;
+      color: #fff;
+    }
+  </style>
+</head>
+<body class="dark">
+  <header>
+    <h1>Typingsprint Pro</h1>
+    <p>Improve your typing speed, accuracy, and focus</p>
+  </header>
+
+  <!-- Theme Toggle Button -->
+  <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
+
+  <main>
+    <!-- Back Button -->
+    <div style="width:100%; text-align:center; margin-bottom:20px;">
+      <button onclick="location.href='index.html'" style="background:#ff5555; color:#fff; border:none; padding:10px 20px; border-radius:8px; cursor:pointer;">⬅ Back</button>
+    </div>
+
+    <!-- Settings -->
+    <div class="settings">
+      <label for="lesson">Choose Lesson:</label>
+      <select id="lesson">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+
+      <label for="time">Time:</label>
+      <select id="time">
+        <option value="0">Free Mode</option>
+        <option value="30">30 Seconds</option>
+        <option value="60">1 Minute</option>
+        <option value="120">2 Minutes</option>
+        <option value="300">5 Minutes</option>
+        <option value="600">10 Minutes</option>
+        <option value="1200">20 Minutes</option>
+      </select>
+
+      <button id="startTest">Start Test</button>
+    </div>
+
+    <!-- Countdown -->
+    <div id="countdown" class="countdown"></div>
+
+    <!-- Typing Area -->
+    <div id="typingArea" class="typing-area">Click "Start Test" to begin typing...</div>
+
+    <!-- Input Area -->
+    <textarea id="inputArea" placeholder="Start typing here..." disabled></textarea>
+
+    <!-- Stats -->
+    <div id="stats">
+      <p>WPM: <span id="wpm">0</span></p>
+      <p>Accuracy: <span id="accuracy">100%</span></p>
+      <p>Errors: <span id="errors">0</span></p>
+      <p>Time Left: <span id="timeLeft">0</span></p>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Typingsprint Pro. Typing made fun and easy.</p>
+  </footer>
+
+  <!-- Typing JS -->
+  <script src="js/typing.js"></script>
+
+  <script>
+    // Theme Toggle
+    function toggleTheme() {
+      document.body.classList.toggle("dark");
+      document.body.classList.toggle("light");
+    }
+  </script>
+</body>
+</html>
+
