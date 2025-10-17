@@ -1,0 +1,284 @@
+/* Typingsprint Pro - Modern UI Theme */
+
+/* ---------- GLOBAL STYLES ---------- */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(120deg, #181818, #202020);
+  color: #f3f3f3;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  padding: 30px 20px 10px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #00c8ff;
+  margin-bottom: 5px;
+}
+
+header p {
+  font-size: 1.1rem;
+  color: #bbb;
+}
+
+main {
+  width: 100%;
+  max-width: 900px;
+  background: #2a2a2a;
+  border-radius: 15px;
+  padding: 40px 30px;
+  box-shadow: 0 0 20px rgba(0, 200, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+/* ---------- MODE SELECTION ---------- */
+.mode-selection {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.mode-selection h2 {
+  color: #00c8ff;
+  margin-bottom: 20px;
+}
+
+.options button {
+  background: #00c8ff;
+  color: #121212;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 25px;
+  margin: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.options button:hover {
+  background: #00a3d1;
+}
+
+/* ---------- INFO / FEATURE LIST ---------- */
+.info {
+  text-align: left;
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.info h3 {
+  color: #00c8ff;
+}
+
+.info ul {
+  line-height: 1.8;
+  color: #ccc;
+}
+
+/* ---------- TYPING PAGE ---------- */
+.settings {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.settings label {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.settings select,
+.settings button {
+  background: #333;
+  color: #fff;
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.settings button {
+  background: #00c8ff;
+  color: #121212;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.settings button:hover {
+  background: #00a3d1;
+}
+
+.countdown {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  color: #00c8ff;
+  text-align: center;
+}
+
+.typing-area {
+  background: #1c1c1c;
+  color: #ccc;
+  padding: 25px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 800px;
+  font-size: 1.2rem;
+  font-family: monospace;
+  line-height: 1.8;
+  text-align: center;
+  min-height: 100px;
+  box-shadow: inset 0 0 10px #000;
+  user-select: none;
+}
+
+.correct {
+  color: #00ff99;
+}
+
+.incorrect {
+  color: #ff5555;
+  text-decoration: underline;
+}
+
+textarea#inputArea {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 800px;
+  height: 120px;
+  background: #111;
+  color: #fff;
+  font-family: monospace;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  border: 1px solid #444;
+  padding: 15px;
+  outline: none;
+}
+
+textarea#inputArea:disabled {
+  background: #222;
+  color: #777;
+}
+
+/* ---------- STATS ---------- */
+#stats {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 800px;
+  background: #1e1e1e;
+  border-radius: 10px;
+  padding: 15px;
+  color: #ccc;
+  box-shadow: 0 0 10px rgba(0, 200, 255, 0.2);
+}
+
+#stats p {
+  font-size: 1rem;
+  text-align: center;
+}
+
+#stats span {
+  color: #00c8ff;
+  font-weight: 600;
+}
+
+/* ---------- CUSTOM TEXT ---------- */
+.custom-input {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.custom-input h3 {
+  color: #00c8ff;
+  margin-bottom: 10px;
+}
+
+#customText {
+  width: 100%;
+  max-width: 800px;
+  height: 100px;
+  background: #111;
+  color: #eee;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 15px;
+  font-family: monospace;
+}
+
+#loadCustomText {
+  background: #00c8ff;
+  color: #121212;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 25px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+#loadCustomText:hover {
+  background: #00a3d1;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #888;
+  font-size: 0.9rem;
+}
+/* Typing area - fixed height and scrollable */
+.typing-area {
+  background: #1c1c1c;
+  color: #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 800px;
+  font-size: 1.2rem;
+  font-family: monospace;
+  line-height: 1.8;
+  text-align: left; /* left-align text for long paragraphs */
+  min-height: 200px; /* fixed height */
+  max-height: 300px; /* prevent overflow */
+  overflow-y: auto; /* scroll if text exceeds box */
+  box-shadow: inset 0 0 10px #000;
+  user-select: none;
+}
+
+/* Input Area */
+textarea#inputArea {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 800px;
+  height: 150px; /* fixed height for typing input */
+  background: #111;
+  color: #fff;
+  font-family: monospace;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  border: 1px solid #444;
+  padding: 15px;
+  outline: none;
+  overflow-y: auto; /* scroll if user types more than area height */
+  resize: vertical; /* allow user to resize vertically if needed */
+}
